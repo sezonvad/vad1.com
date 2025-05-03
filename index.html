@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Клан SEZON_VAD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="intro-screen" onclick="hideIntro()">
+    <img src="C:\Users\NoutSpace\Downloads\5231480418518297956 (1).jpg" alt="Intro" />
+  </div>
+  
+  
+  <header>
+    <h1>Клан SEZON_VAD</h1>
+  </header>
+  <nav>
+    <a href="#top">ТОП писатели в Telegram</a>
+    <a href="#builders">ТОП строители</a>
+    <a href="#pvp">ТОП PvP</a>
+    <a href="#admin">Администрация</a>
+    <a href="#rules">Правила</a>
+  </nav>
+
+  <div class="content">
+    <div class="card" id="top">
+      <h2>ТОП писатели в Telegram</h2>
+      <ul>
+        <li onclick="openModal('top1')">Легендарный Унф</li>
+        <li onclick="openModal('top2')"> Легальный Vaz</li>
+        <li onclick="openModal('top3')">XDmaskaXD3</li>
+      </ul>
+    </div>
+
+    <div class="card" id="builders">
+      <h2>ТОП строители</h2>
+      <ul>
+        <li onclick="openModal('builder1')">Windows5422</li>
+        <li onclick="openModal('builder2')">@Hori_777</li>
+        <li onclick="openModal('builder3')">@ASAleX_X</li>
+      </ul>
+    </div>
+
+    <div class="card" id="pvp">
+      <h2>ТОП PvP бойцы</h2>
+      <ul>
+        <li onclick="openModal('pvp1')">Arturchik2009_</li>
+        <li onclick="openModal('pvp2')">Misha009</li>
+        <li onclick="openModal('pvp3')">SaYrUs</li>
+      </ul>
+    </div>
+
+    <div class="card" id="admin">
+      <h2>Администрация</h2>
+      <ul>
+        <li onclick="openModal('admin1')">Vadumus — Лидер</li>
+        <li onclick="openModal('admin2')">Lenin — Зам</li>
+        <li onclick="openModal('admin3')">Arturchik2009 — Главный народной армии</li>
+        <li onclick="openModal('admin4')">Windows5422f  — Глава архитектуры</li>
+        <li onclick="openModal('admin5')">Unfvhg — Глава милиции</li>
+        <li onclick="openModal('admin6')">@i_de_bil  — глава КГБ</li>
+        <li onclick="openModal('admin7')">@kola_lvan — Глава КРК</li>
+        <li onclick="openModal('admin8')">@GoreVCembe  — Министр обороны</li>
+        <li onclick="openModal('admin9')">@RDREV_UZB  — Министр иностранных дел</li>
+        <li onclick="openModal('admin10')">@ASAlex_0  — министр строительства</li>
+        <li onclick="openModal('admin11')">@RAS1KAY894 — Главный инженер</li>
+        <li onclick="openModal('admin12')">@Segorcs20 — Программист</li>
+        <li onclick="openModal('admin13')">@Error_8_0_8 — Гипнограф</li>
+        <li onclick="openModal('admin14')">@Nigtmare012 — Глава суда</li>
+        <li onclick="openModal('admin15')">@ModsCraftTop — Министр информации</li>
+        <li onclick="openModal('admin16')">Грозный  — Глава разведки</li>
+        <li onclick="openModal('admin17')">@Prikolistik17  — Министр внутренних дел</li>
+        <li onclick="openModal('admin18')">Misha009  — Главный дюпер</li>
+        <li onclick="openModal('admin19')">@DivigentO51   — Глава СВК</li>
+      </ul>
+    </div>
+
+    <div class="card" id="rules">
+      <h2>Правила беседы в Telegram</h2>
+      <ul>
+        <li onclick="openModal('rule1')">Не Спамь</li>
+        <li onclick="openModal('rule2')">Много не делай</li>
+        <li onclick="openModal('rule3')">Следи за языком</li>
+        <li onclick="openModal('rule4')">Растрелим</li>
+        <li onclick="openModal('rule5')">Родина</li>
+        <li onclick="openModal('rule6')">Не напоминай о прошлом!</li>
+        <li onclick="openModal('rule7')">Дали разрешение!</li>
+        <li onclick="openModal('rule8')">Они лучше всех</li>
+        <li onclick="openModal('rule9')">Реклама не в теме</li>
+        <li onclick="openModal('rule10')">Не играйся</li>
+        <li onclick="openModal('rule11')">Не по адресу 18+ не тут</li>
+        <li onclick="openModal('rule12')">Без разрешение не делай</li>
+        <li onclick="openModal('rule13')">Много не трогай</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- МОДАЛЬНЫЕ ОКНА -->
+
+  <!-- ТОП участники -->
+  <div class="modal" id="top1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('top1')">&times;</span>
+      <h3>Унф</h3>
+      <p>Возраст: 14<br>Ник: Unfvhg<br>Специализация: Задрот</p>
+    </div>
+  </div>
+
+  <div class="modal" id="top2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('top2')">&times;</span>
+      <h3>Vaz</h3>
+      <p>Годиков: 12<br>Ник: vaz<br>Специализация: Задрот</p>
+    </div>
+  </div>
+
+  <div class="modal" id="top3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('top3')">&times;</span>
+      <h3>XDmaskaXD3</h3>
+      <p>Возраст: 12<br>Ник: XDmasksXD3<br>Специализация: Типо задрот</p>
+    </div>
+  </div>
+
+  <!-- ТОП строители -->
+  <div class="modal" id="builder1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('builder1')">&times;</span>
+      <h3>Windows5422f</h3>
+      <p>Архитектор КХ<br>Построили много<br>Строитель</p>
+    </div>
+  </div>
+
+  <div class="modal" id="builder2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('builder2')">&times;</span>
+      <h3>Hori_777</h3>
+      <p>Архитектор КХ<br>Построил средненько<br>Строитель</p>
+    </div>
+  </div>
+
+  <div class="modal" id="builder3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('builder3')">&times;</span>
+      <h3>ASAleX_X</h3>
+      <p>Архитектор КХ<br>Построил средненько<br>Строитель</p>
+    </div>
+  </div>
+
+  <!-- ТОП PvP бойцы -->
+  <div class="modal" id="pvp1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('pvp1')">&times;</span>
+      <h3>Arturchik2009</h3>
+      <p>Уровень: Невозможный<br>Аим 99%<br>Оружие: Меч о5 кб2</p>
+    </div>
+  </div>
+
+  <div class="modal" id="pvp2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('pvp2')">&times;</span>
+      <h3>Misha009</h3>
+      <p>Уровень: Сложный<br>Аим: 90%<br>Оружие: Меч о5 кб1</p>
+    </div>
+  </div>
+
+  <div class="modal" id="pvp3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('pvp3')">&times;</span>
+      <h3>SaYrUs</h3>
+      <p>Уровень: Сложный<br>Аим: 95%<br>Оружие: Меч о5 кб1,кб2</p>
+    </div>
+  </div>
+
+  <!-- Администрация -->
+  <div class="modal" id="admin1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin1')">&times;</span>
+      <h3>vadumus — Лидер</h3>
+      <p>Лидер клана. Ответственный за общую организацию и правила клана. Ведёт переговоры с другими кланами.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin2')">&times;</span>
+      <h3>Lenin — Зам</h3>
+      <p>Зам делает дела Лидера если его нету в сети.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin3')">&times;</span>
+      <h3>Arturchik2009 — Глава народной армии</h3>
+      <p>Глава народной армии
+        Командует армией клана, организует тренировки, оборону и военные операции. Отвечает за мобилизацию и боеготовность бойцов.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin4">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin4')">&times;</span>
+      <h3>Windows5422f  — Глава архитектуры</h3>
+      <p>Глава архитектуры
+        Отвечает за проектирование, развитие и координацию всех строительных и дизайнерских проектов клана. Руководит архитекторами, утверждает схемы и следит за стилем построек.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin5">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin5')">&times;</span>
+      <h3>unfvhg — Глава милиции</h3>
+      <p>Глава милиции Следит за порядком в пределах клана, пресекает правонарушения, занимается расследованиями и правопорядком среди мирных граждан.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin6">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin6')">&times;</span>
+      <h3>@i_de_bil  — глава КГБ</h3>
+      <p>Глава КГБ
+        Осуществляет внутреннее наблюдение, выявляет предателей и информаторов. Контролирует безопасность и лояльность членов клана.</p>
+    </div>
+  </div>
+
+
+  <div class="modal" id="admin7">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin7')">&times;</span>
+      <h3>@kola_lvan  — Глава КРК</h3>
+      <p>Глава КРК (Контрольно-ревизионная комиссия)
+        Проверяет деятельность всех структур клана, выявляет злоупотребления, занимается аудитом ресурсов и управлением.
+        </p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin8">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin8')">&times;</span>
+      <h3>@GoreVCembe  — Министр обороны</h3>
+      <p>Министр обороны
+        Стратегически планирует оборону территории клана, распределяет охрану, укрепления и отвечает за защиту от внешних угроз.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin9">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin9')">&times;</span>
+      <h3>@RDREV_UZB  — Министр иностранных дел</h3>
+      <p>Министр иностранных дел
+        Ведёт переговоры с другими кланами, устанавливает альянсы, следит за дипломатическими отношениями и внешней политикой.
+        </p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin10">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin10')">&times;</span>
+      <h3>@ASAlex_0 — министр строительства</h3>
+      <p>Министр строительства
+        Организует строительство и ремонт объектов. Назначает задачи строителям, контролирует выполнение и ресурсное обеспечение.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin11">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin11')">&times;</span>
+      <h3>@RAS1KAY894 — Главный инженер</h3>
+      <p>Главный инженер — это один из ключевых специалистов на предприятии, особенно в технической сфере. Его основная задача — обеспечение технической работоспособности, безопасности и эффективности всех инженерных процессов. </p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin12">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin12')">&times;</span>
+      <h3>@Segorcs20 — Программист</h3>
+      <p>Главный программист
+        Разрабатывает и поддерживает техническую инфраструктуру — сайты, боты, автоматизацию. Обеспечивает техническую поддержку.
+        </p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin13">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin13')">&times;</span>
+      <h3>@Error_8_0_8 — Гипнограф</h3>
+      <p>Гипнограф
+        Отвечает за моральный дух участников, создаёт агитационные материалы, ведёт пропаганду и внутреннее идеологическое влияние.
+        </p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin14">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin14')">&times;</span>
+      <h3>@Nigtmare012 — Глава суда</h3>
+      <p>Глава суда
+        Разбирает споры, выносит приговоры, проводит суды по делам внутри клана. Обеспечивает справедливость и соблюдение устава.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin15">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin15')">&times;</span>
+      <h3>@ModsCraftTop — Министр информации</h3>
+      <p>Министр информации
+        Информирует участников о новостях, изменениях, мероприятиях. Ведёт хронику событий и обновления.
+        </p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin16">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin16')">&times;</span>
+      <h3>Грозный  — Глава разведки</h3>
+      <p>Глава разведки
+        Собирает информацию о других кланах, занимается шпионажем, следит за активностью потенциальных врагов.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin17">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin17')">&times;</span>
+      <h3>@Prikolistik17 — Министр внутренних дел</h3>
+      <p>Министр внутренних дел
+        Координирует внутренние службы, следит за активностью участников, регулирует миграцию и учёт граждан.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin18">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin18')">&times;</span>
+      <h3>Misha009  — Главный дюпер</h3>
+      <p>Главный Дюпер он предоставляет большой запас ресурсов на складе.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="admin19">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('admin19')">&times;</span>
+      <h3>@DivigentO51 — Глава СВК</h3>
+      <p>Глава СВК (Служба внешнего контроля)
+        Следит за внешними угрозами, оценивает обстановку вне клана, контролирует работу послов и внешних агентов.
+        </p>
+    </div>
+  </div>
+
+  <!-- Правила -->
+  <div class="modal" id="rule1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule1')">&times;</span>
+      <h3>Не Спамь!</h3>
+      <p>1.Спам запрещен!  (Больше 4 стиков/гив =Мут 20мин)</p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule2')">&times;</span>
+      <h3>Много не делай</h3>
+      <p>2.приглашение в чат только заместителю или владельцу!</p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule3')">&times;</span>
+      <h3>Язык оторву!</h3>
+      <p>3.оскорбление запрещено (Наказание: Мут 25мин) </p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule4">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule4')">&times;</span>
+      <h3>Только попробуй!</h3>
+      <p>4.скорбление владельца или заместителя (Мут 30 минут)</p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule5">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Не предавай!</h3>
+      <p>5.Не отправлять стикеры, картинки, видео, музыка, символы связанные со свастикой(нацизмом)
+        + запрещено число "1488"
+        Наказание: Мут(35минут) 
+        Если нарушение более тяжкое(1-2 часа)🚫</p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule6">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Спойлер офф</h3>
+      <p>6.упоминание о распаде СССР строго  запрещено 🚫(наказание: Мут 1час) 
+    </p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule7">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Разрешили</h3>
+      <p>7.разрешенные идиологии только:Коммунизм, Социализм, Синдикализм!</p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule8">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Наше святое</h3>
+      <p>8.оскорбление родных (наказание: Мут 1-2 часа)</p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule9">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Не в моде</h3>
+      <p>9.реклама, чатов, ботов, каналов запрещена!!!!(наказание: Мут: 2 часа если наказание более тяжкое: бан 2 дня)</p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule10">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Не в моде</h3>
+      <p>9.реклама, чатов, ботов, каналов запрещена!!!!(наказание: Мут: 2 часа если наказание более тяжкое: бан 2 дня) </p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule11">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>18+ не тут</h3>
+      <p>10.тема-стикеры, картинки, музыка 18+ запрещено🙅‍♂️(наказание: Мут 25мин) </p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule12">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Не играйся</h3>
+      <p>11.заражать,рулетка запрещена! (Наказание: Мут: 10мин)  </p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule13">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Не делай этого</h3>
+      <p>12.добавлять в группу могут только зам и владелец
+        ----исключение------
+        (Добавление участника по просьбе владельца)</p>
+    </div>
+  </div>
+
+  <div class="modal" id="rule13">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('rule5')">&times;</span>
+      <h3>Не трогать!</h3>
+      <p>13. Изменять фото название, описание группы без разрешения запрещено🚫</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <div class="card">
+    <h2>Поле для рисования</h2>
+    <canvas id="drawingCanvas" width="800" height="400"></canvas>
+    <div style="text-align: center; margin-top: 10px;">
+      <button onclick="clearCanvas()" style="padding: 10px 20px; background: #a52a2a; color: #fff8dc; border: none; border-radius: 8px; font-weight: bold;">Очистить</button>
+    </div>
+  </div>
+  
+</body>
+</html>

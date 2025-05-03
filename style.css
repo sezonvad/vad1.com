@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_the_Soviet_Union_%281925%E2%80%931931%29.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff8dc;
+  }
+  
+  header {
+    background: rgba(178, 34, 34, 0.9);
+    padding: 30px;
+    text-align: center;
+    color: #fff8dc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    position: relative;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  header::before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Coat_of_arms_of_the_Soviet_Union_%281926%E2%80%931940%29.svg');
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 60px;
+    height: auto;
+  }
+  
+  nav {
+    background: rgba(139, 0, 0, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 10px;
+    border-bottom: 4px solid #5c0000;
+  }
+  
+  nav a {
+    color: #fff8dc;
+    text-decoration: none;
+    padding: 10px 18px;
+    background: #a52a2a;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background: #d52b1e;
+  }
+  
+  .content {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  
+  .card {
+    background: rgba(255, 248, 220, 0.9);
+    border-left: 10px solid #b22222;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+    color: #2b1a12;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #8b0000;
+    border-bottom: 2px solid #b22222;
+    padding-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    position: relative;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  li::before {
+    content: "\2605";
+    color: red;
+    margin-right: 8px;
+  }
+  
+  .modal-content h3 {
+    color: #b22222;
+  }
+  
+  .modal-content p {
+    color: #2b1a12;
+    font-size: 1.2rem;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #8b0000;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #a52a2a;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #d52b1e;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #intro-screen {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  #intro-screen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+  }
+  
+  #intro-screen:hover img {
+    transform: scale(1.02);
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; visibility: hidden; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  /* Плавный переход ко всем элементам */
+* {
+  transition: all 0.4s ease;
+}
+
+/* Анимации для модального окна */
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes modalFadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.9); }
+}
+
+.modal.show .modal-content {
+  animation: modalFadeIn 0.4s ease forwards;
+}
+
+.modal.hide .modal-content {
+  animation: modalFadeOut 0.4s ease forwards;
+}
+
+/* Плавное появление интро-экрана */
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* Общее улучшение внешнего вида при наведении */
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+}
+
+
+canvas {
+  border: 3px solid #fff8dc;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+  cursor: crosshair;
+}
+
